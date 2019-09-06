@@ -14,6 +14,12 @@
 - create a job (to run every 10 minute) to erase /tmp/task2.
 - check /tmp/task2 file content.
 
+Example:
+```bash
+echo '*/5 * * * * root date > /var/log/cron_job.log' > /var/cron.d/5-min-log
+tail -f /var/cron.d/5-min-log
+```
+
 ### 3. Hourly, daily, weekly, monthly jobs
 - create a job (to run every hour) to print `date` command output to /tmp/tas3_hourly.
 - create a job (to run every day) to print `date` command output to /tmp/tas3_daily.

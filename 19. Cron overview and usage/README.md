@@ -3,11 +3,9 @@
 ## 19. Cron overview and usage
 
 ### 1. Crontab interface
-1.1. Create cron job via `crontab -e` which will be executed every minute and will be appending current timestamp to file /tmp/task1.
-
-1.2. Create cron job via `crontab -e` which will be executed every 5 minutes and will be erasing /tmp/task1 file.
-
-1.3. Check all cron jobs via `crontab -l`
+- Using command `crontab -e` create a job (to run every minute) to print `date` command output to /tmp/task1. 
+- Create cron job via `crontab -e` which will be executed every 5 minutes and will be erasing /tmp/task1 file.
+- Check all cron jobs via `crontab -l`
 
 
 ### 2. Manual way

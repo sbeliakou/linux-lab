@@ -1,21 +1,19 @@
-# linux-lab
+## Prerequizites
+1. Make sure you have `cronie` package installed on the system
+2. Make sure cron service is enabled and running
 
-## 19. Cron overview and usage
+## Tasks for Self-checking
 
-### 1. Crontab interface
+### 1. Creating Cron Jobs with crontab tool
 - Using command `crontab -e` create a job (to run every minute) to print `date` command output to /tmp/task1. 
 - Create cron job via `crontab -e` which will be executed every 5 minutes and will be erasing /tmp/task1 file.
 - Check all cron jobs via `crontab -l`
 
 
-### 2. Manual way
-
-2.1. Create cron job (in /etc/cron.d/) which will be executed every 3rd minute and will be appending current timestamp to /tmp/task2 file.
-
-2.2 Create cron job (in /etc/cron.d/) which will be executed every 10th minute and will be erasing /tmp/task2 file.
+### 2. Creating Cron Jobs with definitions in files
+- Create cron job (in /etc/cron.d/) which will be executed every 3rd minute and will be appending current timestamp to /tmp/task2 file.
+- Create cron job (in /etc/cron.d/) which will be executed every 10th minute and will be erasing /tmp/task2 file.
 Check task2 file content.
-
-
 
 ### 3. Hourly, daily, weekly, monthly jobs
 

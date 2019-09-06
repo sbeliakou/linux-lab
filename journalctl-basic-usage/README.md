@@ -6,5 +6,5 @@
 4. Uncomment line `Listen 80` from `httpd.conf`, then restart httpd service.
 5. Check status of httpd service. Is it running now?
 6. Display only messages about httpd by running `journalctl -u httpd.service`. Did service start normally?
-7. Check boot logs with `journalctl -b. Can you find info about previous boots?
+7. Check boot logs with `journalctl -b`. Can you find info about previous boots?
 8. Check last 15 strings of the journal by running `journalctl -n 15`. 

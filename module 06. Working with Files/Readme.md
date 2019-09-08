@@ -67,3 +67,12 @@
   - explore the content of current directory and make sure there is **test.tar.gz** archive here.
   - Unarchive **test.tar.gz** to the temp directory.
 
+10. Files searching
+  - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.
+  - try to find **passwd** file: `locate passwd`
+  - let's find all task* directories in home directory: `find $HOME -name "task*" -type d`
+  - let's find all test* files in home directory: `find $HOME -name "test*" -type f`
+  - let's find all executed test* files in home directory: `find $HOME -name "test*" -type f -perm /a+x`
+  - explore the opportunities of find command (`man find`) and find all files in home directory not older than 3 hours
+  
+  

@@ -44,6 +44,26 @@
   - let's see the last 3 lines in created file: `tail -n 3 test4`
   - create text file with at least 15 text lines and examine `head` and `tail` command with different options and without them.
   
-
-
+7. Copy, move, rename
+  - create folder **task6_sub**
+  - let's make a copy of **test2** file: `cp test2 test2_copy`. Explore the content of current directory, how many files are there now?
+  - let's move a copied file into new folder: `mv test2_copy task6_sub/`
+  - explore the content of current and **task6_sub** directory: `ls -l`, `ls -l task6_sub/`
+  - rename **task6_sub/test2_copy** file: `mv task6_sub/test2_copy task6_sub/test2_new_name`. check the renaming.
+  - rename **task6_sub** folder. check the renaming.
+  
+8. Executed files
+  - go to the **task6** folder and print the **test2** file content.
+  - let's rewrite the file: `echo 'echo $PATH' > test2`. Print the **test2** file content again.
+  - edit **test2** with **vi** - add `#!/bin/bash` as the first line of the file.
+  - get list-view of the **test2** file: `ls -l test2`
+  - execute `chmod +x test2`
+  - get list-view of the **test2** file again. What have changed?
+  - now we can run **test2** by executing `./test2`. What has happend?
+  
+9. Archiving
+  - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.
+  - let's archive this folder: `tar -czvf test.tar.gz`. 
+  - explore the content of current directory and make sure there is **test.tar.gz** archive here.
+  - Unarchive **test.tar.gz** to the temp directory.
 

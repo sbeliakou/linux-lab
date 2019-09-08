@@ -1,39 +1,39 @@
 ## Prerequizites
-1. Make sure you have `cronie` package installed on the system
-2. Make sure crond service is enabled and running
+1. Log in to VM as devops user and run Terminal (Applications - System Tools - Terminal)
 
-## Tasks for Self-checking
+## Tasks
 
-### 1. Creating Cron Jobs with crontab tool
-- Using command `crontab -e` create a job (to run every minute) to print `date` command output to /tmp/task1.
-- Using command `crontab -e` create a job (to run every 5 minute) to erase /tmp/task1.
-- Using command `crontab -l` check created cron jobs.
+### 1. YUM package management
+- Tomcat installation
+  - install Tomcat application server: `sudo yum install tomcat tomcat-webapps`
+  - inspect which packets were installed, where were they installed from
+  - run tomcat service: `sudo systemctl start tomcat.service`
+  - now enter in your browser http://localhost:8080 and you'll tomcat home page.
+  
+- repository installation
+  - check list of installed repositories
+  - install EPEL (epel-release) repository
+  - check list of installed repositories again. Are there a new entries?
+  
+- Nginx installation
+  - install Nginx web server without install confirmation
+  - now you can run nginx.service and see homepage http://localhost
 
-### 2. Creating Cron Jobs with definitions in files
-- create a job (to run every 3 minute) to print `date` command output to /tmp/task2.
-- create a job (to run every 10 minute) to erase /tmp/task2.
-- check /tmp/task2 file content.
+- uninstalling
+  - stop both services (tomcat and nginx) and remove them with one line and without confirmation
+  
+- package searching
+  - look for which package contains ifconfig tool.
+  
+- update your system
 
-Example:
-```bash
-echo '*/5 * * * * root date > /var/log/cron_job.log' > /etc/cron.d/5-min-log
-tail -f /var/log/cron_job.log
-```
+- show duplicates of tomcat web server
 
-### 3. Hourly, daily, weekly, monthly jobs
-- create a job (to run every hour) to print `date` command output to /tmp/task3_hourly.
-- create a job (to run every day) to print `date` command output to /tmp/task3_daily.
-- create a job (to run every week) to print `date` command output to /tmp/task3_weekly.
-- create a job (to run every month) to print `date` command output to /tmp/task3_monthly.
-- check the content of all resulting files
+- install the earliest version of tomcat (etc. tomcat-7.0.76-7.el7_5)
 
-Example:
-```bash
-cat << 'EOF' > /etc/cron.hourly/every-hour-log
-#!/bin/bash
-echo $(date) >> /tmp/hourly-test
-EOF
-chmod +x /etc/cron.hourly/every-hour-log
-# after an hour
-cat /tmp/hourly-test
-```
+### 2. RPM package management
+- check of installed packages via `rpm -qa`. Count them and remember their quantity.
+- [download rpm package](https://archive.apache.org/dist/httpd/binaries/rpm/x86_64/httpd-2.2.2-1.x86_64.rpm) of httpd web server, install it via `rpm -ivh` and run httpd service
+- check count of installed packages again and compare with previous number. How many packages were installed?
+- look for the paths of all httpd files
+

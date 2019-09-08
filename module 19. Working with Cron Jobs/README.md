@@ -1,6 +1,6 @@
 ## Prerequizites
 1. Make sure you have `cronie` package installed on the system
-2. Make sure cron service is enabled and running
+2. Make sure crond service is enabled and running
 
 ## Tasks for Self-checking
 
@@ -16,13 +16,24 @@
 
 Example:
 ```bash
-echo '*/5 * * * * root date > /var/log/cron_job.log' > /var/cron.d/5-min-log
-tail -f /var/cron.d/5-min-log
+echo '*/5 * * * * root date > /var/log/cron_job.log' > /etc/cron.d/5-min-log
+tail -f /var/log/cron_job.log
 ```
 
 ### 3. Hourly, daily, weekly, monthly jobs
-- create a job (to run every hour) to print `date` command output to /tmp/tas3_hourly.
-- create a job (to run every day) to print `date` command output to /tmp/tas3_daily.
-- create a job (to run every week) to print `date` command output to /tmp/tas3_weekly.
-- create a job (to run every month) to print `date` command output to /tmp/tas3_monthly.
+- create a job (to run every hour) to print `date` command output to /tmp/task3_hourly.
+- create a job (to run every day) to print `date` command output to /tmp/task3_daily.
+- create a job (to run every week) to print `date` command output to /tmp/task3_weekly.
+- create a job (to run every month) to print `date` command output to /tmp/task3_monthly.
 - check the content of all resulting files
+
+Example:
+```bash
+cat << 'EOF' > /etc/cron.hourly/every-hour-log
+#!/bin/bash
+echo $(date) >> /tmp/hourly-test
+EOF
+chmod +x /etc/cron.hourly/every-hour-log
+# after an hour
+cat /tmp/hourly-test
+```

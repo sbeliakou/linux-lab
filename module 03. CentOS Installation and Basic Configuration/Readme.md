@@ -1,8 +1,8 @@
 ## Prerequizites
 1. Make sure Virtualization Technology is enabled in BIOS.
-2. Download and install VirtualBox. (https://www.virtualbox.org/wiki/Downloads)
-3. Download CentOS 7 DVD ISO image. (https://www.centos.org/download/)
-4. Make sure hypervisor launch type is disabled. (https://stackoverflow.com/a/50119065)
+2. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+3. Download [CentOS DVD ISO image](https://www.centos.org/download/).
+4. Make sure hypervisor launch type is disabled. [Link](https://stackoverflow.com/a/50119065)
 
 ## Tasks
 
@@ -28,3 +28,4 @@ Intstalling parameters:
 ### 3. Running CentOS
 Log in to installed CentOS with "devops" credentials.
 Explore CentOS graphical interface, find files viewer, terminal emulator, simple text editor.
+

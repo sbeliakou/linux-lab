@@ -5,12 +5,12 @@
 2. What runlevel would you choose for a server?
 3. What will happen if you set runlevel, which doesn't exist?
 4. How would you bring unexisting runlevel value back to normal?
-
+  
 ## Prerequizites
 
 1. Log in to VM as devops user and run Terminal (Applications - System Tools - Terminal)
 2. Install Apache by running `yum update` and then `yum install -y httpd`
-
+  
 ## Tasks
 
 1. Start httpd by using `service httpd start`
@@ -26,3 +26,4 @@
 5. Stop service
 
 6. Disable httpd from starting at a boot time
+

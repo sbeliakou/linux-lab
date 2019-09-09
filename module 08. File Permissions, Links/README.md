@@ -24,5 +24,14 @@
 
 10. Change group permissions on test-dir with `chgrp group1 test-2`. Does user1 have permissions to read this file?
 
+11. Create symlink with `ln -s /etc/filesystems mylink1`. What size does it have?
+
+12. Create symlink with `ln /etc/filesystems mylink2`. What size does it have?
+
+13. Rename `/etc/filesystems` to `/etc/fs`
+
+14. Check content of mylink1 and mylink2
+
+15. Rename `/etc/fs` back
 
 

@@ -41,8 +41,10 @@
 
   - For Linux as Host OS
     - run Terminal
-    - establish ssh connection by executing: `ssh devops@10.6.211.12`  
-    ![](images/6_ssh_linux2linux.PNG)  
+    - let's create test file and copy it to **devops** user on VM  
+    ![](images/11_scp_linux2linux.PNG)  
+    - check the copying  
+    ![](images/12_scp_check.PNG)  
 
 
 

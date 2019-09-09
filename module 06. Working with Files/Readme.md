@@ -63,9 +63,20 @@
   
 9. Archiving
   - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.
-  - let's archive this folder: `tar -czvf test.tar.gz`. 
-  - explore the content of current directory and make sure there is **test.tar.gz** archive here.
-  - Unarchive **test.tar.gz** to the temp directory.
+  - tar archives
+    - let's archive this folder: `tar -czvf test.tar.gz task6/`. 
+    - explore the content of current directory and make sure there is **test.tar.gz** archive here.
+    - explore the content of created archive: `tar -tvf test.tar.gz`
+    - Unarchive **test.tar.gz** to the temp directory.
+  - gzip archives
+    - archive a few files from **task6** folder: `gzip -c test1 test2 task.gz`. 
+    - explore the content of current directory and make sure there is **task.gz** archive here.
+    - explore the content of created archive
+    - Unarchive **task.gz** to the temp directory
+  - archive names
+    - explore content type of **test.tar.gz** archive: `file test.tar.gz`
+    - rename the archive by removing file extension: `mv test.tar.gz test`
+    - explore content type again. Has something changed?
 
 10. Files searching
   - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.

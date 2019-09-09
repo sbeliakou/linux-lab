@@ -9,15 +9,15 @@
 2. List disks by executing `lsblk`. How do you think, which of them is disk that you just attached?
 
 3. Disk without partitions under it is your new disk. Now, lets create the first partition on it:
-  * List detailed info with `fdisk -l`
-  * Go to interactive mode by running `fdisk /dev/[disk-name]`
-  * In the interactive mode, type `p` and hit Enter to see current partitions. Is there anything now?
-  * Type `n` to create new partition
-  * Use `p` to set primary partition
-  * Leave partition number and first sector with the default values (just hit Enter)
-  * Set last sector to +1G
-  * Check current partitions again. What have changed?
-  * Type `w` to save your partition
+    * List detailed info with `fdisk -l`
+    * Go to interactive mode by running `fdisk /dev/[disk-name]`
+    * In the interactive mode, type `p` and hit Enter to see current partitions. Is there anything now?
+    * Type `n` to create new partition
+    * Use `p` to set primary partition
+    * Leave partition number and first sector with the default values (just hit Enter)
+    * Set last sector to +1G
+    * Check current partitions again. What have changed?
+    * Type `w` to save your partition
   
 4. Create the second primary partition with all options set to default
 
@@ -56,11 +56,11 @@
 21. Remove your second partition from fstab file
 
 22. Delete your second partition:
-  * Run `fdisk /dev/[disk-name]`
-  * List partitions
-  * Type `d`
-  * Enter number of partition to delete
-  * To confirm deletion, type `p` and then type `w`
+    * Run `fdisk /dev/[disk-name]`
+    * List partitions
+    * Type `d`
+    * Enter number of partition to delete
+    * To confirm deletion, type `p` and then type `w`
 
 23. Update partitions by running `partprobe /dev/[disk-name]`
 

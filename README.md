@@ -20,4 +20,4 @@
 - [x] module 20. Software management
 - [x] module 21. Network Configuration
 - [x] module 22. SSH Overview, SCP
-- [x] module 23. Basic Apache Configuration
+- [ ] module 23. Basic Apache Configuration

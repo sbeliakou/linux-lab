@@ -23,7 +23,7 @@
     - `id user1`, `id user1200`
     - `cat /etc/group | grep ^group*`
     - `cat /etc/passwd | grep ^user1*`
-  
+    
 4. Switching to other users, permissions
   - execute `id` and look to user and group information for the current user
   - tasks with **user1**:
@@ -48,4 +48,4 @@
   - go back to **devops** user
   - try to explore of **/etc/sudoers** file again.  Did you get the access?
   - try to execute `sudo cat /etc/sudoers`. What's happened?
-  
+

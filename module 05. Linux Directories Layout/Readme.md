@@ -12,6 +12,7 @@
 7. Go to the temp directory and get it content.
 8. Go up one level using `cd ..` and check the jump.
 9. Go to the user home directory and check the jump.
-  
+    
 Practice yourself with navigation in other directories.
+
 

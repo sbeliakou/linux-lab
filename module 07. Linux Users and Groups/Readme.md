@@ -23,6 +23,8 @@
     - `id user1`, `id user1200`
     - `cat /etc/group | grep ^group*`
     - `cat /etc/passwd | grep ^user1*`
+    - `getent passwd | grep ^user1200*`
+    - `getent passwd | grep ^group1200*`
     
  4. Switching to other users, permissions
   - execute `id` and look to user and group information for the current user

@@ -51,17 +51,33 @@ Run VirtualBox and create a new virtual machine with the following requirements:
 - choose software  
 ![](images/19_cs7_install_software_1.png "")  
 ![](images/19_cs7_install_software_2.png "")  
+![](images/20_cs7_install_main.png "")  
   
-
-
-- Software Selection - Gnome Desktop or KDE plasma Workspaces (up to you)
-- Installation Destination - apply default settings
-- Network and Hostname - Ethernet-Configure-General-Mark "Automatically connect to this network ..." (repeate for 2nd adapter)
-
-- Set root password
-- Create user "devops". Don't make this user administrator. Leave the remaining settings unchanged
-
+- Set root password  
+![](images/21_cs7_install_root.png "")  
+![](images/22_cs7_install_root_pwd.png "")  
+  
+- Create user "devops". Don't make this user administrator. Leave the remaining settings unchanged  
+![](images/23_cs7_install_user.png "")  
+![](images/24_cs7_install_user_pwd.png "")  
+  
+- apply licence  
+![](images/28_cs7_install_lic.png "")  
+  
+- Network and Hostname - Ethernet-Configure-General-Mark "Automatically connect to this network ..." (repeate for 2nd adapter)  
+![](images/29_cs7_install_init_net.png "")  
+![](images/30_cs7_install_network.PNG "")  
+![](images/31_cs7_install_network.PNG "")  
+![](images/32_cs7_install_network.PNG "")  
+![](images/33_cs7_install_network.PNG "")  
+![](images/34_cs7_install_network.PNG "")  
+![](images/35_cs7_install_network.PNG "")  
+  
 ### 3. Running CentOS
-Log in to installed CentOS with "devops" credentials.
-Explore CentOS graphical interface, find files viewer, terminal emulator, simple text editor.
-
+- log in to installed CentOS with "devops" credentials.  
+![](images/36_cs7_install_login.png "")  
+![](images/37_cs7_install_login.png "")  
+  
+- explore CentOS graphical interface, find files viewer, terminal emulator, simple text editor.  
+![](images/38_cs7_install_ready.png "")  
+  

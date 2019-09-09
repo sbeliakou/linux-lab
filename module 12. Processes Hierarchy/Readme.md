@@ -23,4 +23,4 @@
 
 10. Take a look at your running processes by `ps -ef`, can you see what processes have parents?
 
-11. Execute `ps -ejH`. Check your assumption
+11. Execute `ps -ejH`. Check your assumption.

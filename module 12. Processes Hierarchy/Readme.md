@@ -7,9 +7,9 @@
 1. Run `top` command, explore options it provides  
 
 2. Run top in background:
-  * Suspend it with `Ctrl+Z`
-  * List jobs by executing `jobs`. What is id of top process?
-  * Bring top to background by executing `bg [id]`
+    * Suspend it with `Ctrl+Z`
+    * List jobs by executing `jobs`. What is id of top process?
+    * Bring top to background by executing `bg [id]`
   
 3. Bring it back to foreground by running `fg [id]`
 

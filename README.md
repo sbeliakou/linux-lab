@@ -11,7 +11,7 @@
 - [x] module 11. Working with LVM
 - [x] module 12. Processes Hierarchy
 - [x] module 13. SWAP, Memory Usage
-- [ ] module 14. Linux Boot Process
+- [x] module 14. Linux Bootloaders
 - [ ] module 15. InitV System
 - [x] module 16. SystemD
 - [x] module 18. Using Journalctl

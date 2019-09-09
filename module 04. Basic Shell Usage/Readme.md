@@ -9,7 +9,7 @@
 2. Try some other Linux commands and see what they output:
     * date
     * whoami
-    
+
 3. Execute `pwd`. It will show your current directory. Where are you now?
 
 4. Explore files in the current directory using `ls` command
@@ -26,11 +26,19 @@
     * `ls -l`
     * `ls -a`
     * `ls -r`
-    
- 8. Execute `man ls` to learn more about `ls` options
- 
- 9. Find your way to the `/tmp` directory
- 
- 10. Execute `clear`. What happened?
- 
- 11. Execute `history`. Review, what you have done today
+
+8. Execute `man ls` to learn more about `ls` options
+
+9. Find your way to the `/tmp` directory
+
+10. Execute `clear`. What happened?
+
+11. Execute `history`. Review, what you have done today
+
+12. Navigation in man page (try to use hotkeys from [here](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/) as much as possible):
+    * run "man ls"
+    * find the following information:
+        * shortcut for "--almost-all" option;
+        * full option name of "-h";
+        * how to skip printing group information;
+        * how to sort by file size.

@@ -40,9 +40,24 @@
   - rename (or delete) index.html file: `sudo mv /var/www/web-content/index.html /var/www/web-content/index.html_backup`
   - restart httpd service
   - make a http requests to `http://localhost` via browser. Describe what you get.  
-
-3
-httpd + basic auth
+  
+   
+3. Basic authentication in httpd
+  - create file which will contain our credentials: `sudo htpasswd -c /var/www/.htpasswd devops`
+  - modify `Directory /var/www` section:
+  ```bash
+  <Directory "/var/www">
+      AllowOverride None
+      Options +Indexes
+      
+      AuthType basic
+      AuthName "Private page"
+      AuthUserFile "/var/www/.htpasswd"
+      Require valid-user
+  </Directory>
+  ```
+  - restart httpd service
+  - make a http requests to `http://localhost` via browser. Describe what you see.
 
 4
 Virtual hosts

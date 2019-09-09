@@ -5,7 +5,7 @@
   
 ## Tasks
 
-1. SSH connection
+### 1. SSH connection
   - For Windows as Host OS  
     - download and install SSH client (etc. [PuTTY](https://www.putty.org/))  
     - run PuTTY. In Configuration window enter early remembered IP-address (etc. 10.6.211.12) in "Host Name (or IP address)" field  
@@ -26,7 +26,8 @@
     - establish ssh connection by executing: `ssh devops@10.6.211.12`  
     ![](images/6_ssh_linux2linux.PNG)  
   
-2. Copying files by SSH
+  
+### 2. Copying files by SSH
   - For Windows as Host OS  
     - download and install SCP client (etc. [PSCP](https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe))  
     - open PowerShell and execute `pscp -V` to check installation  

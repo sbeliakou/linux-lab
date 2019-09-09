@@ -8,22 +8,24 @@
   - describe which groups user belongs to? What are their gid?
   
 2. Group creating
-  - login as root-user: execute `su` and enter root-password
-  - create group **group1**: `groupadd group1`
-  - create group **group1200** with gid=1200: `groupadd group1200 -g 1200`
-  - examine of created groups: `cat /etc/group | grep group*`. Describe what you see.
-  - try to create new group with name **group1**. Describe what you see.
+    - login as root-user: execute `su` and enter root-password
+    - create group **group1**: `groupadd group1`
+    - create group **group1200** with gid=1200: `groupadd group1200 -g 1200`
+    - examine of created groups: `cat /etc/group | grep group*`. Describe what you see.
+    - try to create new group with name **group1**. Describe what you see.
   
 3. User creating
-  - let's create user **user1** and assign him to **group1**: `useradd -g group1 -G group1 user1`
-  - set the password for **user1**: `passwd user1`
-  - create user **user1200** with uid=1200 and assign him to **group1200** as initial login group and to **group1200**, **group1** as supplementary groups
-  - set the password for **user1200**
-  - examine of created users:
-    - `id user1`, `id user1200`
-    - `cat /etc/group | grep ^group*`
-    - `cat /etc/passwd | grep ^user1*`
-    
+    - let's create user **user1** and assign him to **group1**: `useradd -g group1 -G group1 user1`
+    - set the password for **user1**: `passwd user1`
+    - create user **user1200** with uid=1200 and assign him to **group1200** as initial login group and to **group1200**, **group1** as supplementary groups
+    - set the password for **user1200**
+    - examine of created users:
+      - `id user1`, `id user1200`
+      - `cat /etc/group | grep ^group*`
+      - `cat /etc/passwd | grep ^user1*`
+      - `getent passwd | grep ^user1200*`
+      - `getent passwd | grep ^group1200*`
+  
 4. Switching to other users, permissions
   - execute `id` and look to user and group information for the current user
   - tasks with **user1**:
@@ -48,4 +50,3 @@
   - go back to **devops** user
   - try to explore of **/etc/sudoers** file again.  Did you get the access?
   - try to execute `sudo cat /etc/sudoers`. What's happened?
-

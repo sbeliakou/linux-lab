@@ -3,7 +3,7 @@
 2. Make sure net-tools are installed
   
 ## Tasks
-1. Installation httpd
+#### 1. Installation httpd
 - using yum pachage management install httpd
 - start httpd service and check the running with netstat and systemctl
 - examine access and error logs
@@ -17,7 +17,7 @@
 - examine access and error logs again. Has something changed?  
   
   
-2. Changing document root httpd
+#### 2. Changing document root httpd
 - Setting custom page
   - let's turn off default welcome-page  
     `sudo mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf_backup` 
@@ -49,7 +49,7 @@
   - make a http requests to `http://localhost` via browser. Describe what you get.  
   
   
-3. Basic authentication in httpd
+#### 3. Basic authentication in httpd
 - create file which will contain our credentials:  
   `sudo htpasswd -c /var/www/.htpasswd devops`
 - modify `Directory /var/www` section:
@@ -67,7 +67,8 @@
 - restart httpd service
 - make a http requests to `http://localhost` via browser. Describe what you see.
   
-4. Virtual hosts
+  
+#### 4. Virtual hosts
 - turn on default welcome-page  
   `sudo mv /etc/httpd/conf.d/welcome.conf_backup /etc/httpd/conf.d/welcome.conf`  
 - let's create custom content of our new virtual host
@@ -97,3 +98,5 @@
 - make a few http requests to `http://localhost` via browser  
 - make a few http requests to `http://simplesite.com` via browser  
 - explore access and error log of default site and our simplesite.com  
+  
+Create yourself one more virtual host for training.  

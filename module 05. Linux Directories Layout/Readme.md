@@ -14,3 +14,4 @@
 9. Go to the user home directory and check the jump.
   
 Practice yourself with navigation in other directories.
+

@@ -1,39 +1,48 @@
 ## Prerequizites
-1. Make sure you have `cronie` package installed on the system
-2. Make sure crond service is enabled and running
+1. Login to VM as **devops** user
+2. Make sure net-tools are installed
+  
+## Tasks
+1. Installation httpd
+- using yum pachage management install httpd
+- start httpd service and check the running with netstat and systemctl
+- examine access and error logs: `sudo cat /var/log/httpd/access_log`, `sudo cat /var/log/httpd/error_log`
+- make a few http requests:
+  - using browser: enter `http://localhost` page
+  - using **curl** tool: in Terminal execute `curl http://localhost`
+- examine access and error logs again. Has something changed?  
+  
+  
+2. Changing document root httpd
+- Setting custom page
+  - let's turn off default welcome-page: `sudo mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf_backup` 
+  - in user home directory create **web-content** folder with index.html file and other content
+  ```bash
+  cd
+  mkdir web-content
+  echo "index.html in web-content" > web-content/index.html
+  echo "file1 in web-content" > web-content/file1
+  echo "file2 in web-content" > web-content/file2
+  ```
+  - copy created folder to the `/var/www/` directory: `sudo cp -r web-content/ /var/www/`
+  - using sed in `/etc/httpd/conf/httpd.conf` file change DocumentRoot from `"/var/www/html"` to `"/var/www/web-content"`
+  - restart httpd service
+  - make a few http requests to `http://localhost` via browser and **curl** tool. Describe what you get.  
+  
+- Viewing files in directory
+  - add option file listening - in httpd config file add `Options +Indexes` line to the `Directory /var/www` section:
+  ```bash
+  <Directory "/var/www">
+      Options +Indexes
+      ...
+  </Directory>
+  ```
+  - rename (or delete) index.html file: `sudo mv /var/www/web-content/index.html /var/www/web-content/index.html_backup`
+  - restart httpd service
+  - make a http requests to `http://localhost` via browser. Describe what you get.  
 
-## Tasks for Self-checking
+3
+httpd + basic auth
 
-### 1. Creating Cron Jobs with crontab tool
-- Using command `crontab -e` create a job (to run every minute) to print `date` command output to /tmp/task1.
-- Using command `crontab -e` create a job (to run every 5 minute) to erase /tmp/task1.
-- Using command `crontab -l` check created cron jobs.
-
-### 2. Creating Cron Jobs with definitions in files
-- create a job (to run every 3 minute) to print `date` command output to /tmp/task2.
-- create a job (to run every 10 minute) to erase /tmp/task2.
-- check /tmp/task2 file content.
-
-Example:
-```bash
-echo '*/5 * * * * root date > /var/log/cron_job.log' > /etc/cron.d/5-min-log
-tail -f /var/log/cron_job.log
-```
-
-### 3. Hourly, daily, weekly, monthly jobs
-- create a job (to run every hour) to print `date` command output to /tmp/task3_hourly.
-- create a job (to run every day) to print `date` command output to /tmp/task3_daily.
-- create a job (to run every week) to print `date` command output to /tmp/task3_weekly.
-- create a job (to run every month) to print `date` command output to /tmp/task3_monthly.
-- check the content of all resulting files
-
-Example:
-```bash
-cat << 'EOF' > /etc/cron.hourly/every-hour-log
-#!/bin/bash
-echo $(date) >> /tmp/hourly-test
-EOF
-chmod +x /etc/cron.hourly/every-hour-log
-# after an hour
-cat /tmp/hourly-test
-```
+4
+Virtual hosts

@@ -17,3 +17,5 @@
 - [x] module 18. Using Journalctl                                                                                             
 - [x] module 19. Working with Cron Jobs                                                                                      
 - [x] module 20. Software management
+- [ ] module 21. Network Configuration
+- [ ] module 22. SSH Overview, SCP

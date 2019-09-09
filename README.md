@@ -3,7 +3,7 @@
 - [ ] module 01. What Linux Is
 - [ ] module 02. Linux Family
 - [x] module 03. CentOS Installation and Basic Configuration
-- [ ] module 04. Basic Shell Usage
+- [x] module 04. Basic Shell Usage
 - [x] module 05. Linux Directories Layout
 - [x] module 06. Working with Files
 - [x] module 07. Linux Users and Groups

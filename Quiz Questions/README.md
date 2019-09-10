@@ -44,7 +44,86 @@ You were in /home/user - your home directory. Then you went to /home/user/subfol
 - [x] cd ..
 - [x] cd -
 - [x] cd ../../user
+
+
 #### module 06. Working with Files
+How to create new directory?
+- [x] mkdir new_dir
+- [ ] touch new_dir
+- [ ] echo "new_dir" >
+- [x] mkdir -p new_dir/new_sub_dir
+
+How to create new file?
+- [x] touch new_file
+- [x] vi new_file
+- [ ] mkdir new_file
+- [x] echo "new_file" > new_file
+
+How save file and exit from vi?
+- [ ] :q!
+- [ ] ctrl+o
+- [ ] ctrl+x, ctrl+c
+- [x] :wq
+
+How to append line to the end of file?
+- [ ] append "line" file1
+- [ ] echo "line" > file1
+- [ ] add "line" file1
+- [x] echo "line" >> file1
+
+How to print last 10 lines of file?
+- [ ] print -l {-10..} file
+- [x] tail file
+- [x] tail -n 10 file
+- [ ] head -n 10 file
+
+How to print first 10 lines of file?
+- [ ] print -l {0..10} file
+- [x] head file
+- [x] head -n 10 file
+- [ ] tail -n 10 file
+
+How to rename file?
+- [ ] cp file1 file2
+- [ ] rn file1 file2
+- [x] mv file1 file2
+- [ ] rm file1 file2
+
+How to copy file?
+- [x] cp file1 file2
+- [ ] rn file1 file2
+- [ ] mv file1 file2
+- [ ] rm file1 file2
+
+How to remove files?
+- [ ] cp file1 file2
+- [ ] rn file1 file2
+- [ ] mv file1 file2
+- [x] rm file1 file2
+
+how to archive folder?
+- [ ] arch folder1 folder.zip
+- [x] tar -czvf myarchive.tar.gz folder1/
+- [ ] tar -tvf myarchive.tar.gz
+- [ ] tar -xzvf myarchive.tar.gz
+
+how to unarchive folder?
+- [ ] arch folder1 folder.zip
+- [ ] tar -czvf myarchive.tar.gz folder1/
+- [ ] tar -tvf myarchive.tar.gz
+- [x] tar -xzvf myarchive.tar.gz
+
+how to explore the content of archive?
+- [ ] arch folder1 folder.zip
+- [ ] tar -czvf myarchive.tar.gz folder1/
+- [x] tar -tvf myarchive.tar.gz
+- [ ] tar -xzvf myarchive.tar.gz
+
+How to find myfile file?
+- [x] locate myfile
+- [x] find / -name "myfile" -type f
+- [ ] search myfile
+- [ ] where myfile
 #### module 07. Linux Users and Groups
 #### module 08. File Permissions, Links
 #### module 10. Filesystems, Devices

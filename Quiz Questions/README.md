@@ -20,6 +20,29 @@ Does Open Source mean free access to source code - right to modify without restr
 
 #### module 03. CentOS Installation and Basic Configuration
 #### module 04. Basic Shell Usage
+Which of the following command shows you current time?
+- [ ] whoami
+- [ ] cd time
+- [x] date
+- [ ] pwd
+
+How to get the current directory?
+- [ ] print directory
+- [ ] getworkdir
+- [x] pwd
+- [ ] echo dir
+
+How to get the current directory content as list view?
+- [ ] Get-Content
+- [x] ls -l
+- [ ] pwd
+- [x] ls -al
+
+You were in /home/user - your home directory. Then you went to /home/user/subfolder directory. How you can come back to /home/user?
+- [x] cd
+- [x] cd ..
+- [x] cd -
+- [x] cd ../../user
 #### module 05. Linux Directories Layout
 #### module 06. Working with Files
 #### module 07. Linux Users and Groups

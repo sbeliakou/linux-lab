@@ -1,6 +1,8 @@
   
 ## Quiz
 
+#### modules 01-02 what is Linux, Linux family
+  
 1. Select correct statements:
 - [x] Linux is inexpensive and powerful alternative to other OS
 - [ ] Linux doesn't support multi-user and multitasking technologies

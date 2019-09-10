@@ -76,6 +76,10 @@ Select the right octal equivalents for the permissions
 
 How to create symlink to the /home/folder1?
 
+What links are bigger?
+
+Does file movement affect soft link?
+
 #### module 10. Filesystems, Devices
 What utilites you will use to manage disks in CentOS?
 
@@ -90,11 +94,34 @@ Could volume group be extended by logical volume?
 
 How to display all physical volumes?
 
-How to extend logical volume by 20% of 
+How to extend logical volume by 20% of another lv?
+
+How to resize physical volume?
+
 #### module 12. Processes Hierarchy
+
+How to ifnd multithreaded processes?
+
+How to list all processes in a tree structure?
+
+Which signal will kill process?
+
+How to kill process by it's name?
+
+How to find job id of the process?
+
+Which of this are correct ways to bring process to the background?
+
+Which of the columns reffer to the PID of the process? To the parent of the process?
 #### module 13. SWAP, Memory Usage
+What are `uptime`'s time values?
+
+Which file contains info about cpu?
+
+What is the purpose of swap?
 #### module 14. Linux Bootloaders
 #### module 15. InitV System
+
 #### module 16. SystemD
 #### module 18. Using Journalctl
 #### module 19. Working with Cron Jobs
@@ -117,20 +144,36 @@ How to install rpm package?
 
 #### module 21. Network Configuration
 How to find out your IP address?  
+
 How to check listening tcp ports?  
+
 How to check firewalld state?  
+
 How to turn the network instaface off?  
-How to turn the network instaface on?  
+
+How to turn the network instaface on? 
+
 #### module 22. SSH Overview, SCP
-How to connect to other OS via SSH? Select right statement.  
+How to connect to other OS via SSH? Select right statement. 
+
 How to copy filefrom one OS to the other using SSH?  
+
 #### module 23. Basic Apache Configuration
 Which ports does httpd listen by default?  
+
 Which logs does httpd store?  
+
 Where are the httpd logs stored?  
+
 What technology allows you to have many different sites on the httpd?  
+
 Does httpd allow to listen the content of directory?  
+
 Does httpd allow to restrict access to site with login-password?  
+
 Where will you place the custom config of httpd?  
+
 What is the default document root directory of httpd?  
+
 How to check the site state from Terminal?  
+

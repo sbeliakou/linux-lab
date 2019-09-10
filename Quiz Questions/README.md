@@ -2,9 +2,13 @@
  
 #### module 01. What Linux Is
 #### module 02. Linux Family
-Select correct statements:
+Select correct statements:( 
+Linux is inexpensive and powerful alternative to other OS  
+Linux doesn't support multi-user and multitasking technologies  
+Linux runs on a variety of platforms  
+Linux is developed by Linus Tordvalds in July 1991)  
 
-Select Linux features:
+Select Linux features:(some features)
 
 Does Open Source mean free access to source code - right to modify without restriction, right to freely distribute software?
 

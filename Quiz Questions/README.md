@@ -65,7 +65,7 @@ How save file and exit from vi?
 - [ ] ctrl+x, ctrl+c
 - [x] :wq
 
-How to append line to the end of file?
+How to append line to the end of non-empty file?
 - [ ] append "line" file1
 - [ ] echo "line" > file1
 - [ ] add "line" file1

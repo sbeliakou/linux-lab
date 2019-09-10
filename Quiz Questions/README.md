@@ -125,7 +125,39 @@ How to find myfile file?
 - [ ] search myfile
 - [ ] where myfile
 #### module 07. Linux Users and Groups
+How to create group with custom gid?
+- [ ] groupadd group_name
+- [x] groupadd group_name -g 1250
+- [ ] create group 1250
+
+How to create user and assign him to group1?
+- [x] useradd -g group1 -G group1 user1
+- [ ] useradd user1
+- [ ] useradd user1 group1
+
+How to switch to user2?
+- [x] su - user2
+- [x] su user2
+- [ ] su
 #### module 08. File Permissions, Links
+Identify the following permissions: -rwxrw-r--
+- [ ] Read, write and execute by everyone, read and write for group members and read only for the owner
+- [x] Read, write and execute by owner, read and write for group members and read only for everyone else
+- [ ] Read, write and execute by group members, read and write for the owner and read only for everyone else
+- [ ] Read, write and execute by group members, read only for owner and read and write for everyone else
+
+Select the right octal equivalents for the permissions
+- [x] -rwxrw-r-- = 764
+- [ ] -rw------- = 500
+- [x] -rwxrw-r-x = 765
+- [ ] -rw-r--r-- = 655
+- [x] -r-------- = 400
+
+How to create symlink to the /home/folder1?
+- [ ] cp -r /home/folder1 mylink
+- [x] ln -s /home/folder1 mylink
+- [ ] mv -f /home/folder1 mylink
+
 #### module 10. Filesystems, Devices
 #### module 11. Working with LVM
 #### module 12. Processes Hierarchy
@@ -135,6 +167,16 @@ How to find myfile file?
 #### module 16. SystemD
 #### module 18. Using Journalctl
 #### module 19. Working with Cron Jobs
+Which cron job will be executing every minute?
+- [x] * * * * * root date
+- [ ] 1 * * * * root date
+- [x] */1 * * * * root date
+
+How to create cron job?
+- [x] crontab -e
+- [ ] crontab -l
+- [x] add file to /etc/cron.d/
+- [x] add file to /etc/cron.hourly/
 #### module 20. Software management
 #### module 21. Network Configuration
 #### module 22. SSH Overview, SCP

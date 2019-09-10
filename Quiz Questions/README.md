@@ -119,8 +119,19 @@ What are `uptime`'s time values?
 Which file contains info about cpu?
 
 What is the purpose of swap?
+
+How to check, whether your system has configured swap?
+
+How to add file to swap?
 #### module 14. Linux Bootloaders
 #### module 15. InitV System
+How many runlevels exists?
+
+What runlevel would you choose for a webserver?
+
+What will happen if you set runlevel, which doesn't exist?
+
+How would you bring unexisting runlevel value back to normal?
 
 #### module 16. SystemD
 How to explore running services on your PC?

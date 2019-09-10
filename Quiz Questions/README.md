@@ -123,7 +123,23 @@ What is the purpose of swap?
 #### module 15. InitV System
 
 #### module 16. SystemD
+How to explore running services on your PC?
+
+How to check httpd service state?
+
+How to restart tomcat service?
+
+Can you change boot order of definite service?
+
+How to get list dependencies of definite service?
+
 #### module 18. Using Journalctl
+How to get journal records of httpd service?
+
+How to get boot log from journal?
+
+How to get last 7 records from journal?
+
 #### module 19. Working with Cron Jobs
 Which cron job will be executing every minute?
 

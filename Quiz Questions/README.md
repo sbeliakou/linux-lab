@@ -20,6 +20,7 @@ Does Open Source mean free access to source code - right to modify without restr
 
 #### module 03. CentOS Installation and Basic Configuration
 #### module 04. Basic Shell Usage
+#### module 05. Linux Directories Layout
 Which of the following command shows you current time?
 - [ ] whoami
 - [ ] cd time
@@ -43,7 +44,6 @@ You were in /home/user - your home directory. Then you went to /home/user/subfol
 - [x] cd ..
 - [x] cd -
 - [x] cd ../../user
-#### module 05. Linux Directories Layout
 #### module 06. Working with Files
 #### module 07. Linux Users and Groups
 #### module 08. File Permissions, Links

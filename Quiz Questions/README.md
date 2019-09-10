@@ -10,6 +10,20 @@ Does Open Source mean free access to source code - right to modify without restr
 
 #### module 03. CentOS Installation and Basic Configuration
 #### module 04. Basic Shell Usage
+How do bash/sh standart prompt look?
+
+How to get to the directory, which is two levels upper?
+
+How to find, in which directory are you now?
+
+How to list content of the directory in reverse order?
+
+How to find info about all command options?
+
+How to clear terminal?
+
+How to find list of all performed commands?
+
 #### module 05. Linux Directories Layout
 Which of the following command shows you current time?
 
@@ -63,7 +77,20 @@ Select the right octal equivalents for the permissions
 How to create symlink to the /home/folder1?
 
 #### module 10. Filesystems, Devices
+What utilites you will use to manage disks in CentOS?
+
+How to receive detailed info about disks partitions?
+
+What fdisk option coressponds to primary partition?
+
+How you can enable automount?
+
 #### module 11. Working with LVM
+Could volume group be extended by logical volume?
+
+How to display all physical volumes?
+
+How to extend logical volume by 20% of 
 #### module 12. Processes Hierarchy
 #### module 13. SWAP, Memory Usage
 #### module 14. Linux Bootloaders
@@ -76,6 +103,28 @@ Which cron job will be executing every minute?
 How to create cron job?
 
 #### module 20. Software management
+How to install without confirmation?
+How to check list of installed repositories.
+How to find duplicates?
+How to install the define version etc. nginx?
+how to get list of installed rpm packages?
+How to install rpm package?
 #### module 21. Network Configuration
+How to find out your IP address?
+How to check listening tcp ports?
+How to check firewalld state?
+How to turn the network instaface off?
+How to turn the network instaface on?
 #### module 22. SSH Overview, SCP
+How to connect to other OS via SSH? Select right statement.
+How to copy filefrom one OS to the other using SSH?
 #### module 23. Basic Apache Configuration
+Which ports does httpd listen by default?
+Which logs does httpd store?
+Where are the httpd logs stored?
+What technology allows you to have many different sites on the httpd?
+Does httpd allow to listen the content of directory?
+Does httpd allow to restrict access to site with login-password?
+Where will you place the custom config of httpd?
+What is the default document root directory of httpd?
+How to check the site state from Terminal?

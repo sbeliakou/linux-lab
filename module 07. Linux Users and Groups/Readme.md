@@ -34,13 +34,21 @@
     - create file **/tmp/user1_test** with the some content
     - set permissions to **rw-------**
     - examine permissions of **/tmp/user1_test**. Describe what you see.
+    - copy **/tmp/user1_test** to /opt directory
     - log out from **user1** by executing `exit`
   - tasks with **user1200**:
     - log in as **user1200** user by executing `su user1200`
     - get, examine and describe user and group information for the current user
     - try to read the **/tmp/user1_test file** content, try delete the file. Describe what you see?
     - log out from **user1200**
+  - tasks with **root**
+    - log in as root
+    - try to read the **/opt/user1_test**, then try to delete it. Describe what you see
+    - create directory **/opt/root_dir**, copy file **user1_test** there. What permissions does copied file have? What
+      permissions does directory have?
+    - log out from **root** and log in as **user1**. Can you delete **/opt/root_dir/user1_test**? Why?
   - describe the difference between `su ...` and `su - ...` command
+  - What permissions does user's home directory have?
   
 5. Delegate root privelegies
   - login as **devops** user. try to explore of **/etc/sudoers** file. What's happened? Let's give permissions to **devops** user.

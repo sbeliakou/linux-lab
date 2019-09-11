@@ -170,21 +170,49 @@ How to find `myfile` file?
 
 ## module 07. Linux Users and Groups
 How to create group with custom gid?
+- [ ] groupadd group_name
+- [x] groupadd group_name -g 1250
+- [ ] create group 1250
+- [ ] newgroup group_name -gid 1250
 
 How to create user and assign him to group1?
+- [x] useradd -g group1 -G group1 user1
+- [ ] useradd user1
+- [ ] useradd user1 group1
+- [ ] assign -u user1 -g group1
 
 How to switch to user2?
+- [x] su - user2
+- [x] su user2
+- [ ] su
+- [ ] login user2
 
 ## module 08. File Permissions, Links
 Identify the following permissions: -rwxrw-r--
+- [ ] Read, write and execute by everyone, read and write for group members and read only for the owner
+- [x] Read, write and execute by owner, read and write for group members and read only for everyone else
+- [ ] Read, write and execute by group members, read and write for the owner and read only for everyone else
+- [ ] Read, write and execute by group members, read only for owner and read and write for everyone else
 
 Select the right octal equivalents for the permissions
+- [x] -rwxrw-r-- = 764
+- [ ] -rw------- = 500
+- [x] -rwxrw-r-x = 765
+- [ ] -rw-r--r-- = 655
+- [x] -r-------- = 400
 
 How to create symlink to the /home/folder1?
+- [ ] cp -r /home/folder1 mylink
+- [x] ln -s /home/folder1 mylink
+- [ ] mv -f /home/folder1 mylink
 
 What links are bigger?
+- [ ] symlink
+- [x] hardlink
 
 Does file movement affect soft link?
+- [x] affect
+- [ ] doesn't affect
 
 ## module 10. Filesystems, Devices
 What utilites you will use to manage disks in CentOS?
@@ -236,19 +264,52 @@ How to expand physical volume to take all available space?
 
 ## module 12. Processes Hierarchy
 
-How to ifnd multithreaded processes?
+How to find multithreaded processes?
+- [ ] ps -ejH
+- [x] ps -m
+- [ ] ps -aux
+- [ ] ps --multithreaded
 
 How to list all processes in a tree structure?
-
+- [x] use `ps` with `H` option
+- [ ] use `ps` with `t` option
+- [ ] use `ps` with `j` option
+ 
 Which signal will kill process?
+- [x] `-9`
+- [x] `KILL`
+- [x] `SIGKILL`
 
 How to kill process by it's name?
+- [x] kilall [name]
+- [ ] kill -9 [name]
+- [ ] kill -15 [name]
+- [ ] kill -9 %[name]
 
 How to find job id of the process?
+- [ ] ps -aux | grep [name]
+- [x] jobs | grep [name]
+- [ ] jobs -l
+ 
+Which of these are correct ways to bring process to the background?
+- [x] process & 
+- [x] bg [process-id]
+- [x] bg %[process-id] 
+- [ ] process !
 
-Which of this are correct ways to bring process to the background?
+Which of the columns reffer to the PID of the process? To the parent's PID?
+```bash
+[alex@somewhere]~$ ps -ef
+root         1     0  2 10:57 ?        00:00:00 /init
+root         6     1  0 10:57 tty1     00:00:00 /init
+alex         7     6  2 10:57 tty1     00:00:00 -bash 
+alex        27     7  0 10:58 tty1     00:00:00 ps -ef
+```
+- [ ] Third is PID,  second is PPID
+- [ ] Fourth is PID, third is PPID
+- [x] Second is PID, third is PPID
+- [ ] Third is PPID, fourth is PPID
 
-Which of the columns reffer to the PID of the process? To the parent of the process?
 ## module 13. SWAP, Memory Usage
 What are `uptime`'s time values?
 

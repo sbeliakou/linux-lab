@@ -165,7 +165,7 @@ What utilites you will use to manage disks in CentOS?
 - [x] partprobe
 
 How to receive detailed info about disks partitions?
-- [ ] fdisk -l
+- [x] fdisk -l
 - [ ] mkfs.xfs
 - [ ] df -l
 - [ ] umount -a

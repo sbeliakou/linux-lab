@@ -20,19 +20,48 @@ Does Open Source mean free access to source code - right to modify without restr
 
 #### module 03. CentOS Installation and Basic Configuration
 #### module 04. Basic Shell Usage
-How do bash/sh standart prompt look?
+
+How does bash standart prompt look like?
+- [ ] >
+- [x] $
+- [ ] /
+- [ ] #
 
 How to get to the directory, which is two levels upper?
+- [ ] cd ./[2]
+- [ ] cd -
+- [ ] cd ../
+- [x] cd ../..
 
 How to find, in which directory are you now?
+- [x] pwd
+- [ ] whereami
+- [ ] echo $HOME
+- [ ] echo $PATH
 
 How to list content of the directory in reverse order?
+- [x] ls -r
+- [ ] ls -R
+- [ ] ls -l
+- [ ] ls -s
 
-How to find info about all command options?
+How to find info about all `mv` command options?
+- [x] man mv
+- [x] mv --help
+- [x] info mv
+- [ ] options mv 
 
 How to clear terminal?
+- [ ] purge
+- [ ] clean
+- [x] clear
+- [x] Ctrl+l
 
 How to find list of all performed commands?
+- [x] history
+- [ ] cat /etc/history
+- [ ] cat /home/user/.bash_history
+- [ ] cat $(echo $HISTFILE)
 
 #### module 05. Linux Directories Layout
 Which of the following command shows you current time?
@@ -259,15 +288,32 @@ how to get list of installed rpm packages?
 How to install rpm package?
 
 #### module 21. Network Configuration
-How to find out your IP address?  
+How to find out your IP address?
+- [x] hostname -I
+- [x] ifconfig
+- [x] ip a
 
-How to check listening tcp ports?  
+How to check listening tcp ports?
+- ports --all
+- [x] netstat -tlpn
+- [ ] ifconfig
 
-How to check firewalld state?  
+How to check firewalld state?
+- [x] sudo systemctl status firewalld
+- [ ] sudo firewalld state
+- [ ] sudo firewalld -h
 
-How to turn the network instaface off?  
+How to turn the network instaface off?
+- [x] ifconfig eth0 down
+- [ ] ifconfig eth0 up
+- [ ] ip eth0 off
+- [ ] ip eth0 on
 
-How to turn the network instaface on? 
+How to turn the network instaface on?
+- [ ] ifconfig eth0 down
+- [x] ifconfig eth0 up
+- [ ] ip eth0 off
+- [ ] ip eth0 on 
 
 #### module 22. SSH Overview, SCP
 How to correctly connect to other OS via SSH? Select right statement.

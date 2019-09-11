@@ -270,9 +270,17 @@ How to turn the network instaface off?
 How to turn the network instaface on? 
 
 #### module 22. SSH Overview, SCP
-How to connect to other OS via SSH? Select right statement. 
+How to correctly connect to other OS via SSH? Select right statement.
+- [x] ssh user2@192.168.1.10
+- [ ] Get-Connect user2@192.168.1.10
+- [ ] ping user2@192.168.1.10
+- [ ] scp user2@192.168.1.10
 
-How to copy filefrom one OS to the other using SSH?  
+How to correctly copy filefrom one OS to the other using SSH?
+- [ ] ssh-copy file1 user2@192.168.1.10:/home/user2
+- [ ] cp file1 user2@192.168.1.10:/home/user2
+- [ ] ssh-copy user2@192.168.1.10:/home/user2 file1
+- [x] scp file1 user2@192.168.1.10:/home/user2
 
 #### module 23. Basic Apache Configuration
 Which ports does httpd listen by default?

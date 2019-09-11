@@ -20,4 +20,51 @@
 - [x] module 20. Software management
 - [x] module 21. Network Configuration
 - [x] module 22. SSH Overview, SCP
-- [ ] module 23. Basic Apache Configuration
+- [x] module 23. Basic Apache Configuration
+
+
+## Tools you should get accuineted with:
+### Package Management
+- [yum](http://man7.org/linux/man-pages/man8/yum.8.html)
+- [rpm](https://linux.die.net/man/8/rpm)
+
+### Filesystem, Files and Directories
+- mkdir
+- cd
+- ls
+- df
+- du
+- cat
+- tail
+- head
+- fdisk
+- dd
+
+### System Resources
+- top
+- uptime
+- free
+
+### File Editors
+- vi/vim
+- nano
+
+### Manageing Users and Groups
+- useradd
+- usermod
+
+### Escalating Privileges
+- su
+- sudo
+
+### Remote Access
+- ssh
+- scp
+
+### System Services
+- systemctl
+- service
+- chkconfig
+
+### Logs
+- journalctl

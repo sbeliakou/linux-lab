@@ -3,34 +3,49 @@
 
 ## Tasks
 
-1. Execute `cd ~`. Check in which directory we are?
+Execute `cd ~`. Check in which directory we are?
 
-2. Folder creating
-  - create folder **task6**: `mkdir task6`
-  - explore the content of current directory and make sure **task6** was created
-  - enter to the **task6** folder. 
-  
-3. File creating: touch-way
+#### 1. Working with folders
+1. Folder creating:
+  - create empty folder **folder1**:
+    `mkdir folder1`
+  - create empty folders **folder2**, **folder3** using one-line command
+  - moreover you can create subdirectories at the same time:
+    `mkdir -p folder4/folder4-1/folder4-1-1`
+  - explore and make sure all 6 folders above were created
+2. Folder removing:
+  - non-empty folders
+    - try to remove **folder4** by executing `rmdir folder4/`. What's happened?
+    - remove **folder4** by executing `rm -rf folder4/`
+    - make sure **folder4** was deleted
+  - empty folders
+    - try to remove **folder1** by executing `rmdir folder1/`. What's happened?
+    - remove **folder2** using `rm -rf`
+    - romove **folder3**
+
+#### 2. Working with files
+Create work directory **task6** and go into it.
+1. File creating: touch-way
   - create **test1** file: `touch test1`
   - explore the content of current directory, make sure **test1** was created. How big is it?
   
-4. File creating: with **vi**
+2. File creating: with **vi**
   - run `vi test2`
   - you are in Vi text editor now: 
     - press `i` to enter in insert mode
     - input `Hello file`
     - press `Esc` to get in normal mode
-    - enter `:wq` to save and exit
+    - enter `:wq` or `:x` to save and exit
   - let's see the content of **test2** file: `cat test2`. What can you see?
   - explore the content of current directory, how many files are there now?
   
-5. File creating: redirection-way
+3. File creating: redirection-way
   - execute `echo 'Hello, another file' > test3`
   - explore the content of current directory again. What can you see? Get the content of created file.
   - execute `echo 'Hello batman' > test3` and explore the content of **test3** file again. What you see?
   - execute `echo 'Hello joker' >> test3` and explore the content of **test3** file again. Describe what you see?
   
-6. File creating: with **cat**
+4. File creating: with **cat**
   - let's create multiline file:
     ```bash
     cat << 'EOF' > test4
@@ -44,41 +59,42 @@
   - let's see the last 3 lines in created file: `tail -n 3 test4`
   - create text file with at least 15 text lines and examine `head` and `tail` command with different options and without them.
   
-7. Copy, move, rename
+5. Copy, move, rename
   - create folder **task6_sub**
   - let's make a copy of **test2** file: `cp test2 test2_copy`. Explore the content of current directory, how many files are there now?
   - let's move a copied file into new folder: `mv test2_copy task6_sub/`
-  - explore the content of current and **task6_sub** directory: `ls -l`, `ls -l task6_sub/`
+  - explore the content of current and **task6_sub** directory
   - rename **task6_sub/test2_copy** file: `mv task6_sub/test2_copy task6_sub/test2_new_name`. check the renaming.
-  - rename **task6_sub** folder. check the renaming.
+  - rename **task6_sub** folder to **task*_new_name**. check the renaming.
   
-8. Executed files
-  - go to the **task6** folder and print the **test2** file content.
-  - let's rewrite the file: `echo 'echo $PATH' > test2`. Print the **test2** file content again.
-  - edit **test2** with **vi** - add `#!/bin/bash` as the first line of the file.
-  - get list-view of the **test2** file: `ls -l test2`
-  - execute `chmod +x test2`
-  - get list-view of the **test2** file again. What have changed?
-  - now we can run **test2** by executing `./test2`. What has happend?
+6. Executed files
+  - go to the **task6** folder and execute the **test2** file. What dod you get? Describe an error.
+  - let's make this file executable:
+    - rewrite the file: `echo 'echo $PATH' > test2`. Print the **test2** file content again.
+    - edit **test2** with **vi** - insert `#!/bin/bash` as the first line of the file.
+    - get list-view of the **test2** file: `ls -l test2`
+    - execute `chmod u+x test2`
+    - get list-view of the **test2** file again. What have changed?
+  - now we can run **test2** by executing `./test2`. What did you get?
   
-9. Archiving
+7. Archiving
   - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.
   - tar archives
     - let's archive this folder: `tar -czvf test.tar.gz task6/`. 
     - explore the content of current directory and make sure there is **test.tar.gz** archive here.
     - explore the content of created archive: `tar -tvf test.tar.gz`
     - Unarchive **test.tar.gz** to the temp directory.
-  - gzip archives
-    - archive a few files from **task6** folder: `gzip -c test1 test2 task.gz`. 
-    - explore the content of current directory and make sure there is **task.gz** archive here.
-    - explore the content of created archive
-    - Unarchive **task.gz** to the temp directory
+  - zip archives
+    - archive **task6** folder: `zip -rp test.zip task6/`. 
+    - explore the content of current directory and make sure there is **test.zip** archive here.
+    - explore the content of created archive: `unzip -l test.zip`
+    - Unarchive **test.zip** to the temp directory
   - archive names
     - explore content type of **test.tar.gz** archive: `file test.tar.gz`
-    - rename the archive by removing file extension: `mv test.tar.gz test`
+    - rename the archive by removing file extension
     - explore content type again. Has something changed?
 
-10. Files searching
+8. Files searching
   - go to the home directory. Explore the content of current directory and make sure there is **task6** folder here.
   - try to find **passwd** file: `locate passwd`
   - let's find all task* directories in home directory: `find $HOME -name "task*" -type d`
@@ -86,4 +102,8 @@
   - let's find all executed test* files in home directory: `find $HOME -name "test*" -type f -perm /a+x`
   - explore the opportunities of find command (`man find`) and find all files in home directory not older than 3 hours
   
-  
+9. Removing
+  - go to the **task6** directory
+  - remove file **test1**: `rm test1`
+  - remove file **test2** without confirmation
+  - remove **test3**, **test4** files without confirmation with one-line command

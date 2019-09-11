@@ -1,7 +1,7 @@
-## Quiz
+# Quiz
  
-#### module 01. What Linux Is
-#### module 02. Linux Family
+## module 01. What Linux Is
+## module 02. Linux Family
 Select correct statements:
 - [x] Linux is inexpensive and powerful alternative to other OS
 - [ ] Linux doesn't support multi-user and multitasking technologies
@@ -18,8 +18,8 @@ Does Open Source mean free access to source code - right to modify without restr
 - [x] True
 - [ ] False
 
-#### module 03. CentOS Installation and Basic Configuration
-#### module 04. Basic Shell Usage
+## module 03. CentOS Installation and Basic Configuration
+## module 04. Basic Shell Usage
 
 How does bash standart prompt look like?
 - [ ] >
@@ -63,7 +63,7 @@ How to find list of all performed commands?
 - [ ] cat /home/user/.bash_history
 - [ ] cat $(echo $HISTFILE)
 
-#### module 05. Linux Directories Layout
+## module 05. Linux Directories Layout
 Which of the following command shows you current time?
 - [ ] whoami
 - [ ] cd time
@@ -88,7 +88,7 @@ You were in /home/user - your home directory. Then you went to /home/user/subfol
 - [x] cd -
 - [x] cd ../../user
 
-#### module 06. Working with Files
+## module 06. Working with Files
 How to create new directory?
 - [x] mkdir new_dir
 - [ ] touch new_dir
@@ -168,14 +168,14 @@ How to find `myfile` file?
 - [ ] search myfile
 - [ ] where myfile
 
-#### module 07. Linux Users and Groups
+## module 07. Linux Users and Groups
 How to create group with custom gid?
 
 How to create user and assign him to group1?
 
 How to switch to user2?
 
-#### module 08. File Permissions, Links
+## module 08. File Permissions, Links
 Identify the following permissions: -rwxrw-r--
 
 Select the right octal equivalents for the permissions
@@ -186,7 +186,7 @@ What links are bigger?
 
 Does file movement affect soft link?
 
-#### module 10. Filesystems, Devices
+## module 10. Filesystems, Devices
 What utilites you will use to manage disks in CentOS?
 - [x] df
 - [ ] dd
@@ -211,7 +211,7 @@ How you can enable automount?
 - [ ] use `umount -a`
 - [ ] use `fdisk -s`
 
-#### module 11. Working with LVM
+## module 11. Working with LVM
 Could volume group be extended by logical volume?
 - [ ] Yes
 - [x] No
@@ -234,7 +234,7 @@ How to expand physical volume to take all available space?
 - [x] pvresize
 - [ ] vgextend [pv-name]
 
-#### module 12. Processes Hierarchy
+## module 12. Processes Hierarchy
 
 How to ifnd multithreaded processes?
 
@@ -249,7 +249,7 @@ How to find job id of the process?
 Which of this are correct ways to bring process to the background?
 
 Which of the columns reffer to the PID of the process? To the parent of the process?
-#### module 13. SWAP, Memory Usage
+## module 13. SWAP, Memory Usage
 What are `uptime`'s time values?
 
 Which file contains info about cpu?
@@ -259,8 +259,8 @@ What is the purpose of swap?
 How to check, whether your system has configured swap?
 
 How to add file to swap?
-#### module 14. Linux Bootloaders
-#### module 15. InitV System
+## module 14. Linux Bootloaders
+## module 15. InitV System
 How many runlevels exists?
 
 What runlevel would you choose for a webserver?
@@ -269,7 +269,7 @@ What will happen if you set runlevel, which doesn't exist?
 
 How would you bring unexisting runlevel value back to normal?
 
-#### module 16. SystemD
+## module 16. SystemD
 How to explore running services on your PC?
 
 How to check httpd service state?
@@ -280,14 +280,14 @@ Can you change boot order of definite service?
 
 How to get list dependencies of definite service?
 
-#### module 18. Using Journalctl
+## module 18. Using Journalctl
 How to get journal records of httpd service?
 
 How to get boot log from journal?
 
 How to get last 7 records from journal?
 
-#### module 19. Working with Cron Jobs
+## module 19. Working with Cron Jobs
 Which cron job will be executing every minute?
 - [x] * * * * * root date
 - [ ] 1 * * * * root date
@@ -299,7 +299,7 @@ How to create cron job?
 - [x] add file to /etc/cron.d/
 - [x] add file to /etc/cron.hourly/
 
-#### module 20. Software management
+## module 20. Software management
 How to install without confirmation?
 - [x] sudo yum install -y tomcat
 - [ ] sudo yum install -f tomcat
@@ -335,7 +335,7 @@ How to install rpm package?
 - [ ] rpm -ivh
 - [x] rpm -ivh nginx.rpm
 
-#### module 21. Network Configuration
+## module 21. Network Configuration
 How to find out your IP address?
 - [x] hostname -I
 - [x] ifconfig
@@ -363,7 +363,7 @@ How to turn the network instaface on?
 - [ ] ip eth0 off
 - [ ] ip eth0 on 
 
-#### module 22. SSH Overview, SCP
+## module 22. SSH Overview, SCP
 How to correctly connect to other OS via SSH? Select right statement.
 - [x] ssh user2@192.168.1.10
 - [ ] Get-Connect user2@192.168.1.10
@@ -376,7 +376,7 @@ How to correctly copy filefrom one OS to the other using SSH?
 - [ ] ssh-copy user2@192.168.1.10:/home/user2 file1
 - [x] scp file1 user2@192.168.1.10:/home/user2
 
-#### module 23. Basic Apache Configuration
+## module 23. Basic Apache Configuration
 Which ports does httpd listen by default?
 - [x] 80
 - [x] 443

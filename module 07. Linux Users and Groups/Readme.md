@@ -31,9 +31,9 @@
   - tasks with **user1**:
     - switch to the **user1**: `su - user1`
     - get, examine and describe user and group information for the current user
-    - create file **/tmp/user1_test** with the some content
-    - set permissions to **rw-------**
-    - examine permissions of **/tmp/user1_test**. Describe what you see.
+    - create file **/tmp/user1_test** with some content
+    - set permissions with `chmod 600 user1_test`
+    - examine permissions of **/tmp/user1_test** with `ls -l`. Describe what you see.
     - copy **/tmp/user1_test** to /opt directory
     - log out from **user1** by executing `exit`
   - tasks with **user1200**:
@@ -50,6 +50,20 @@
   - describe the difference between `su ...` and `su - ...` command
   - What permissions does user's home directory have?
   
+4.1 Executable permissions
+  - tasks with **user1**:
+    - create file **~/user1_test** with content:
+      ```bash
+      #!/bin/bash
+      echo "Hello from user1_test"
+      ```
+    - examine permissions of **~/user1_test**. Describe what you see.
+    - try runinnig `./user1_test`. What happened? Why?
+    - set executable permissions with `chmod u+x user1_test`. Can you run file now?
+    - create new directory **user1_dir**
+    - examine permissions of **~/user1_dir**. Describe what you see.
+    - set permissions to **user1_dir**, so there is no `x`. Can you access this directory? Can you rename it? 
+    
 5. Delegate root privelegies
   - login as **devops** user. try to explore of **/etc/sudoers** file. What's happened? Let's give permissions to **devops** user.
   - login as root-user

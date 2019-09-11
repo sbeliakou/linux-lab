@@ -42,3 +42,10 @@
         * full option name of "-h";
         * how to skip printing group information;
         * how to sort by file size.
+
+
+## Helpful Materials
+- https://www.youtube.com/watch?v=ETDinOX0owc&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=23
+- https://www.youtube.com/watch?v=7kZPro7x1-g&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=24
+- https://www.youtube.com/watch?v=Ar67tjc_WdQ&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=25
+- https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/

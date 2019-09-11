@@ -294,7 +294,7 @@ How to find out your IP address?
 - [x] ip a
 
 How to check listening tcp ports?
-- ports --all
+- [ ] ports --all
 - [x] netstat -tlpn
 - [ ] ifconfig
 

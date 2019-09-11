@@ -4,6 +4,13 @@
   
 ## Tasks
 
+- Check your IP addresses. try to execute:
+  ```bash
+  hostname -I
+  ifconfig
+  ip a
+  ```
+  
 - Check all tcp listening ports: `sudo netstat -tlpn`  
   Which port belongs to httpd web server?
   

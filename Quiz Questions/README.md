@@ -206,15 +206,33 @@ What fdisk option coressponds to primary partition?
 - [ ] +primary
 
 How you can enable automount?
+- [x] add partition to fstab file
+- [ ] use `mount -a` 
+- [ ] use `umount -a`
+- [ ] use `fdisk -s`
 
 #### module 11. Working with LVM
 Could volume group be extended by logical volume?
+- [ ] Yes
+- [x] No
 
 How to display all physical volumes?
+- [ ] vgdsiplay
+- [x] pvdisplay
+- [ ] pvcreate -t
+- [ ] lvextend
 
 How to extend logical volume by 20% of another lv?
+- [x] lvextend -l +20%FREE
+- [ ] lvextend -l +20%
+- [ ] lvextend -s +20%
+- [ ] lvextend -s +20Gb
 
-How to resize physical volume?
+How to expand physical volume to take all available space?
+- [ ] pvextend -l +100%FREE
+- [ ] pvdisplay
+- [x] pvresize
+- [ ] vgextend [pv-name]
 
 #### module 12. Processes Hierarchy
 
@@ -271,21 +289,51 @@ How to get last 7 records from journal?
 
 #### module 19. Working with Cron Jobs
 Which cron job will be executing every minute?
+- [x] * * * * * root date
+- [ ] 1 * * * * root date
+- [x] */1 * * * * root date
 
 How to create cron job?
+- [x] crontab -e
+- [ ] crontab -l
+- [x] add file to /etc/cron.d/
+- [x] add file to /etc/cron.hourly/
 
 #### module 20. Software management
 How to install without confirmation?
+- [x] sudo yum install -y tomcat
+- [ ] sudo yum install -f tomcat
+- [ ] sudo yum install tomcat
 
-How to check list of installed repositories.
+How to check list of configured repositories.
+- [ ] yum list -r
+- [x] yum repolist
+- [ ] sudo yum install epel
+- [ ] yum search repo
 
-How to find duplicates?
+How to find all duplicates of tomcat?
+- [ ] yum list -r
+- [ ] yum search duplicates
+- [ ] yum search tomcat
+- [x] yum search --showduplicates tomcat
 
 How to install the define version etc. nginx?
+- [ ] yum search nginx
+- [ ] yum install nginx
+- [ ] yum install nginx -v 1.10
+- [x] yum install nginx-1.10
 
 how to get list of installed rpm packages?
+- [x] rpm -qa
+- [ ] yum list
+- [ ] rpm -ivh
+- [ ] rpm -ivh nginx.rpm
 
 How to install rpm package?
+- [ ] rpm -qa
+- [ ] yum list
+- [ ] rpm -ivh
+- [x] rpm -ivh nginx.rpm
 
 #### module 21. Network Configuration
 How to find out your IP address?

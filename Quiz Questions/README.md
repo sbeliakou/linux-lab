@@ -275,21 +275,57 @@ How to connect to other OS via SSH? Select right statement.
 How to copy filefrom one OS to the other using SSH?  
 
 #### module 23. Basic Apache Configuration
-Which ports does httpd listen by default?  
+Which ports does httpd listen by default?
+- [x] 80
+- [x] 443
+- [ ] 8080
+- [ ] 22
 
-Which logs does httpd store?  
+Which logs does httpd store by default?
+- [x] error log
+- [ ] boot log
+- [x] access log
+- [ ] catalina.out
 
-Where are the httpd logs stored?  
+Where are the httpd logs stored?
+- [ ] /etc/httpd/conf.d/
+- [x] /var/log/httpd
+- [ ] /etc/httpd/conf
+- [ ] /var/www/html
 
-What technology allows you to have many different sites on the httpd?  
 
-Does httpd allow to listen the content of directory?  
+What technology allows you to have many different sites on the httpd?
+- [ ] there isn't such opportunity
+- [x] Virtual Hosts
+- [ ] Virtual Sites
 
-Does httpd allow to restrict access to site with login-password?  
+Does httpd allow to listen the content of directory?
+- [x] it does
+- [ ] it doesn't
 
-Where will you place the custom config of httpd?  
 
-What is the default document root directory of httpd?  
+Does httpd allow to restrict access to site with login-password?
+- [x] it does
+- [ ] it doesn't
 
-How to check the site state from Terminal?  
+
+
+Where will you place the custom config of httpd?
+- [x] /etc/httpd/conf.d/
+- [ ] /var/log/httpd
+- [ ] /etc/httpd/conf
+- [ ] /var/www/html
+
+
+What is the default document root directory of httpd on CentOS?
+- [ ] /var/log/httpd
+- [ ] /etc/httpd/conf
+- [x] /var/www/html
+
+
+How to check the site state from Terminal?
+- [ ] http http://sitename.com
+- [x] curl http://sitename.com
+- [ ] state http://sitename.com
+- [ ] http://sitename.com
 

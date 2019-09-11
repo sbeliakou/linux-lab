@@ -4,7 +4,7 @@
 
 ## Tasks
 
-1. Run `systemctl | grep running`. What services are currently active?
+1. Run `systemctl | grep running` or `systemctl --state running`. What services are currently active?
 
 2. Run `systemctl status httpd`. Is it active?
 

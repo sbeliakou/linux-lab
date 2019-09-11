@@ -25,6 +25,7 @@
       - `cat /etc/passwd | grep ^user1*`
       - `getent passwd | grep ^user1200*`
       - `getent passwd | grep ^group1200*`
+    - what is the difference between `/etc/passwd` and `getent`?
 
 4. Delegate root privelegies
   - login as **devops** user. try to explore of **/etc/sudoers** file. What's happened? Let's give permissions to **devops** user.

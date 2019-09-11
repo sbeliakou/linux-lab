@@ -118,7 +118,7 @@ Create 7 files with names file1, ..., file7.
 
 #### 4. Ownership
 
-  
+!!will be added
 
 
 
@@ -131,3 +131,8 @@ Create 7 files with names file1, ..., file7.
 - Rename `/etc/filesystems` to `/etc/fs`
 - Check content of mylink1 and mylink2
 - Rename `/etc/fs` back
+
+! unlink
+! what happend if delete source file?
+! get origin path from link
+

@@ -335,6 +335,12 @@ How to check, whether your system has configured swap?
 - [ ] free -t
 How to add file to swap?
 ## module 14. Linux Bootloaders
+What is the correct sequence of boot process?
+- [ ] Kernel stage, BIOS stage, Boot loader stage
+- [x] BIOS stage, Boot loader stage, Kernel stage
+- [ ] Boot loader stage, BIOS stage, Kernel stage
+
+
 ## module 15. InitV System
 How many runlevels exists?
 - [x] 7

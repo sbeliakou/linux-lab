@@ -311,42 +311,97 @@ alex        27     7  0 10:58 tty1     00:00:00 ps -ef
 - [ ] Third is PPID, fourth is PPID
 
 ## module 13. SWAP, Memory Usage
-What are `uptime`'s time values?
+What are `uptime`'s load averages time values?
+- [ ] 1, 5, 10 mins
+- [ ] 1, 10, 20 hours
+- [x] 1, 5, 15 mins
+- [ ] 1, 10, 20 mins
 
 Which file contains info about cpu?
+- [x] /proc/cpuinfo
+- [ ] /proc/cpu
+- [ ] /etc/cpu
+- [ ] /etc/sysinfo
 
 What is the purpose of swap?
+- [x] Increase the amount of virtual memory available to a host
+- [ ] Increase the amount of disk space on the host
+- [ ] Increase performance of the host during high load periods.
 
 How to check, whether your system has configured swap?
-
+- [ ] top
+- [x] swapon -s
+- [ ] mkswap
+- [ ] free -t
 How to add file to swap?
 ## module 14. Linux Bootloaders
 ## module 15. InitV System
 How many runlevels exists?
+- [x] 7
+- [ ] 5
+- [ ] 9
+- [ ] 6
 
 What runlevel would you choose for a webserver?
+- [ ] 5
+- [ ] 2
+- [x] 3
+- [ ] 0
 
 What will happen if you set runlevel, which doesn't exist?
+- [ ] Nothing, system will start at previous runlevel
+- [ ] Nothing, system will start at runlevel 3
+- [ ] System will become absolutely unaccessible
+- [x] Nothing but GRUB boot choice will be accessible
 
-How would you bring unexisting runlevel value back to normal?
 
 ## module 16. SystemD
 How to explore running services on your PC?
+- [ ] service show running
+- [x] systemctl | grep running
+- [x] systemctl --state running
+- [ ] service --all
 
 How to check httpd service state?
+- [x] systemctl status httpd.service
+- [ ] systemctl --state running
+- [ ] httpd.service state
+- [ ] systemctl list-dependencies
 
 How to restart tomcat service?
+- [ ] tomcat.service restart
+- [ ] systemctl enable tomcat.service
+- [x] systemctl restart tomcat.service
+- [ ] systemctl start tomcat.service
 
 Can you change boot order of definite service?
+- [x] yes, using `after` and `before` in Unit section 
+- [ ] no, it is defined of system
 
 How to get list dependencies of definite service?
+- [ ] systemctl
+- [ ] systemctl state dependencies
+- [ ] systemctl status dependencies
+- [x] systemctl list-dependencies --before network.target
 
 ## module 18. Using Journalctl
 How to get journal records of httpd service?
+- [x] journalctl -u httpd.service
+- [ ] cat /var/log/httpd
+- [ ] journalctl -xe
+- [ ] journalctl -b
 
 How to get boot log from journal?
+- [ ] journalctl -u httpd.service
+- [ ] cat /var/log/httpd
+- [ ] journalctl -xe
+- [x] journalctl -b
 
 How to get last 7 records from journal?
+- [ ] journalctl
+- [x] journalctl -n 7
+- [ ] journalctl -xe
+- [ ] journalctl -b
 
 ## module 19. Working with Cron Jobs
 Which cron job will be executing every minute?

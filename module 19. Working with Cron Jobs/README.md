@@ -37,3 +37,7 @@ chmod +x /etc/cron.hourly/every-hour-log
 # after an hour
 cat /tmp/hourly-test
 ```
+
+
+## Helpful Materials
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-automating_system_tasks

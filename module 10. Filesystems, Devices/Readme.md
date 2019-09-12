@@ -18,7 +18,7 @@
     * Set last sector to +1G
     * Check current partitions again. What have changed?
     * Type `w` to save your partition
-  
+
 4. Create the second primary partition with all options set to default
 
 5. List info about partitions again. What size does your second partition have?
@@ -65,3 +65,16 @@
 23. Update partitions by running `partprobe /dev/[disk-name]`
 
 24. Run `fdisk -l`. What have changed?
+
+
+## Helpful Materials
+- https://www.youtube.com/watch?v=KfiFsUCntGM&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=43
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-disk-storage
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/chap-using_the_mount_command
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-swapspace
+- https://codingbee.net/rhcsa/rhcsa-overview-of-partitions-and-logical-volumes
+- https://codingbee.net/rhcsa/rhcsa-creating-partitions
+- http://www.tldp.org/LDP/sag/html/filesystems.html#FS-INTRO
+- https://linuxsurvival.com/linux-tutorial-introduction/
+- https://linuxjourney.com/lesson/filesystem-hierarchy
+- https://linuxjourney.com/lesson/device-types

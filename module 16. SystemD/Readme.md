@@ -22,7 +22,7 @@
 
 9. Open systemd unit file of the httpd service (it is located in `/usr/lib/systemd/system`)
 
-10. Change `After=network.target` to  `Before=network.target` in the [Unit] section 
+10. Change `After=network.target` to  `Before=network.target` in the [Unit] section
 
 11. Check your changes by running `systemctl list-dependencies --before network.target`. Is httpd.service listed in there?
 
@@ -34,3 +34,7 @@
 
 15. Check default page in browser at http://127.0.0.1:80
 
+
+## Helpful Materials
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-services
+- https://www.golinuxcloud.com/beginners-guide-systemd-tutorial-linux/

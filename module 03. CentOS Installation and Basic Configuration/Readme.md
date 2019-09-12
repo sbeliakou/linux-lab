@@ -83,23 +83,31 @@ Run VirtualBox and create a new virtual machine with the following requirements:
   
 
 ### 4. Updating and installing VirtualBox addons
--   
+- run **Applications** - **System Tools** - **Terminal**
 ![](images/40_vb_add.PNG "")  
--   
+  
+- execute `su` and enter root password ehich set earlier. Then execute `yum update -y` for system updating
 ![](images/41_vb_add.PNG "")  
--   
+  
+- execute `yum install -y kernel-devel kernel-headers gcc perl` for installing these packages
 ![](images/42_vb_add.PNG "")  
--   
+  
+- after installing execute `shutdown -r now` for rebooting your system
 ![](images/43_vb_add.PNG "")  
--   
+  
+- after rebooting select **Devices** - **Insert Guest Additions CD image**
 ![](images/44_vb_add.png "")  
--   
+  
+- in appeared window select **Run**
 ![](images/45_vb_add.PNG "")  
--   
+  
+- enter root password again
 ![](images/46_vb_add.PNG "")  
--   
+  
+- and wait the end of installation
 ![](images/47_vb_add.PNG "")  
--   
+  
+- turn on **Bidirectional** clipboard for convenience
 ![](images/48_vb_add.png "")  
 
 

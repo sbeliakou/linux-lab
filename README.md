@@ -57,7 +57,8 @@
 - su
 - sudo
 
-### Remote Access
+### Network, Remote Access
+- curl
 - ssh
 - scp
 

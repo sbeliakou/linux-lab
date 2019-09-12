@@ -81,3 +81,30 @@ Run VirtualBox and create a new virtual machine with the following requirements:
 - explore CentOS graphical interface, find files viewer, terminal emulator, simple text editor.  
 ![](images/38_cs7_install_ready.png "")  
   
+
+### 4. Updating and installing VirtualBox addons
+-   
+![](images/40_vb_add.PNG "")  
+-   
+![](images/41_vb_add.PNG "")  
+-   
+![](images/42_vb_add.PNG "")  
+-   
+![](images/43_vb_add.PNG "")  
+-   
+![](images/44_vb_add.png "")  
+-   
+![](images/45_vb_add.PNG "")  
+-   
+![](images/46_vb_add.PNG "")  
+-   
+![](images/47_vb_add.PNG "")  
+-   
+![](images/48_vb_add.png "")  
+
+
+
+
+
+
+

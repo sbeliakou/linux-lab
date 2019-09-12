@@ -23,7 +23,7 @@
   - stop both services (tomcat and nginx) and remove them with one line and without confirmation
   
 - package searching
-  - look for which package contains ifconfig tool.
+  - look for which package contains ifconfig tool (tips: `yum provides`)
   
 - update your system
 
@@ -33,7 +33,7 @@
 
 ### 2. RPM package management
 - check of installed packages via `rpm -qa`. Count them and remember their quantity.
-- [download rpm package](https://archive.apache.org/dist/httpd/binaries/rpm/x86_64/httpd-2.2.2-1.x86_64.rpm) of httpd web server, install it via `rpm -ivh` and run httpd service
+- [download appropriate rpm package](https://rpmfind.net/linux/rpm2html/search.php?query=httpd&submit=Search+.) of httpd web server, install it via `rpm -ivh` and run httpd service
 - check count of installed packages again and compare with previous number. How many packages were installed?
 - look for the paths of all httpd files
-
+- remove installed httpd web server with **rpm**

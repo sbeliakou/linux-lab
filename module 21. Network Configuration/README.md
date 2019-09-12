@@ -4,6 +4,12 @@
 
 ## Tasks
 
+- let's check internet connection:
+  ```bash
+  ping epam.com
+  sudo traceroute -I epam.com
+  ```
+  
 - Check your IP addresses. try to execute:
   ```bash
   hostname -I
@@ -13,7 +19,8 @@
 
 - Check all tcp listening ports: `sudo netstat -tlpn`
   Which port belongs to httpd web server?
-
+  You can filter out output using **grep**: `sudo netstat -tlpn | grep httpd`
+  
 - let's change httpd port:
   - in `/etc/httpd/conf/httpd.conf` change line: from `Listen 80` to `Listen 8080`
   - restart httpd service

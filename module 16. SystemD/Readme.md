@@ -34,6 +34,11 @@
 
 15. Check default page in browser at http://127.0.0.1:80
 
+16. Moreover, **systemctl** may be used to manage system: 
+  - explore **System Commands** section in `systemctl --help`
+  - reboot your server using `systemctl`  
+  (note: apart from that you can use `shutdown -r now`)
+
 
 ## Helpful Materials
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-services

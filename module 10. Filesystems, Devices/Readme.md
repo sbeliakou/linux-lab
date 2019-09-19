@@ -3,6 +3,7 @@
 
 ## Tasks
 
+#### 1. Add new hard drive to VM
 
 1. Attach new 2GB hard drive to your CentOS VM using [this guide](https://www.techrepublic.com/article/how-to-add-new-drives-to-a-virtualbox-virtual-machine/) (up to "Preparing the drive for use" section)
 
@@ -44,6 +45,8 @@
 15. Restart your system
 
 16. Check df again. Have your disk been mounted automaticaly?
+
+#### 2. Delete partition
 
 17. Copy `/etc/filesystems` to /opt1 and /opt2
 

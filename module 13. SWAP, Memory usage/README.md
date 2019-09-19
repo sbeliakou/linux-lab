@@ -4,33 +4,39 @@
 
 ## Tasks
 
-1. Execute `swapon -s`. Does your system have configured swap?
+### 1. Swap configuration
 
-2. Run `free -t`. What amount of RAM do you have?
+- Execute `swapon -s`. Does your system have configured swap?
 
-3. Create swap file by executing `fallocate -l 1G /swapfile`
+- Run `free -t`. What amount of RAM do you have?
 
-4. Run `ls -lh /swapfile`. Does swapfile have correct size?
+- Create swap file by executing `fallocate -l 1G /swapfile`
 
-5. Grant 600 permissions to swapfile
+- Run `ls -lh /swapfile`. Does swapfile have correct size?
 
-6. Execute `mkswap /swapfile && swapon /swapfile`
+- Grant 600 permissions to swapfile
 
-7. Check `swapon -s` again. What have changed?
+- Execute `mkswap /swapfile && swapon /swapfile`
 
-8. Run `free -t`. What have changed?
+- Check `swapon -s` again. What have changed?
 
-9. Run `top` command. Who is the biggest RAM consumer?
+- Add swapfile to fstab with `sed`
 
-10. Add swapfile to fstab with `sed`
+### 2. Gathering memory info 
 
-11. Compare `free -h` results and content of `/proc/meminfo` file
+- Run `free -t`. What have changed?
 
-12. Find biggest cpu consumer with `top`
+- Run `top` command. Who is the biggest RAM consumer?
 
-13. Find how many kernels do you have with `cat /proc/cpuinfo`. Does it differ from info, provided by VirtualBox?
+- Compare `free -h` results and content of `/proc/meminfo` file
 
-14. Move some big file to another place using `dd`. Check cpu usage with `uptime`. What have changed after 3 mins? After 15 mins?
+- Find biggest cpu consumer with `top`
+
+### 3. Gathering cpu info
+
+- Find how many kernels do you have with `cat /proc/cpuinfo`. Does it differ from info, provided by VirtualBox?
+
+- Move some big file to another place using `dd`. Check cpu usage with `uptime`. What have changed after 3 mins? After 15 mins?
 
 
 ## Helpful Materials

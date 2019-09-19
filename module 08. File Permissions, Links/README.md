@@ -116,26 +116,29 @@ Create 7 files with names file1, ..., file7.
   - set permissions to **user1_dir**, so there is no `x`. Can you access this directory? Can you rename it?
 
 
-#### 4. Ownership
-
-!!will be added
-
-
-
-
-
-
-#### 5. Symlink, hardlink
+#### 3. Ownership
+- tasks with **user1**:
+  - create new directory **~/user1_storage** with files `file1` and `file2` stored in it 
+  - examine directory and files permissions. Describe what you see
+  - make **root** owner of `file1` with `chown root: ~/user1_storage/file1`. Can you change this file now?
+  - change directory ownership with `chown user1: -R ~/user1_storage`. Can you change `file1` now?
+  
+#### 4. Symlink, hardlink
 - Create symlink with `ln -s /etc/filesystems mylink1`. What size does it have?
 - Create symlink with `ln /etc/filesystems mylink2`. What size does it have?
-- Rename `/etc/filesystems` to `/etc/fs`
-- Check content of mylink1 and mylink2
-- Rename `/etc/fs` back
 
-! unlink
-! what happend if delete source file?
-! get origin path from link
+- Removing source file:
+  - rename `/etc/filesystems` to `/etc/fs`
+  - check content of mylink1 and mylink2. What happened?
+  - rename `/etc/fs` back
 
+- Remove links:
+  - use `unlink mylink1`. What happened?
+  - use `rm mylink2`. How have your working directory changed?
+  
+- Get origin path from link
+  - execute `which java` and explore the provided directory. Where does symlink point?
+  - go link after link and find, where the original file is.
 
 ## Helpful Materials
 - https://www.youtube.com/watch?v=rp3CDGGnFL0&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=30

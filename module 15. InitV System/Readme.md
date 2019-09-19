@@ -9,17 +9,17 @@
 ## Prerequizites
 
 1. Log in to VM as devops user and run Terminal (Applications - System Tools - Terminal)
-2. Install Apache by running `yum update` and then `yum install -y httpd`
+2. Install Apache by running `sudo yum update` and then `sudo yum install -y httpd`
 
 ## Tasks
 
-1. Start httpd by using `service httpd start`
+1. Start httpd by using `sudo service httpd start`
 
-2. Check it's status with `service httpd status`
+2. Check it's status with `sudo service httpd status`
 
-3. Check what services are currently active with `service --status-all`
+3. Check what services are currently active with `sudo service --status-all`
 
-4. Make httpd start at boot time with `chkconfig httpd on`
+4. Make httpd start at boot time with `sudo chkconfig httpd on`
 
 5. Reboot and check status of httpd. Did it start automatically?
 

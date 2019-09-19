@@ -116,14 +116,14 @@ Create 7 files with names file1, ..., file7.
   - set permissions to **user1_dir**, so there is no `x`. Can you access this directory? Can you rename it?
 
 
-#### 4. Ownership
+#### 3. Ownership
 - tasks with **user1**:
   - create new directory **~/user1_storage** with files `file1` and `file2` stored in it 
   - examine directory and files permissions. Describe what you see
   - make **root** owner of `file1` with `chown root: ~/user1_storage/file1`. Can you change this file now?
   - change directory ownership with `chown user1: -R ~/user1_storage`. Can you change `file1` now?
   
-#### 5. Symlink, hardlink
+#### 4. Symlink, hardlink
 - Create symlink with `ln -s /etc/filesystems mylink1`. What size does it have?
 - Create symlink with `ln /etc/filesystems mylink2`. What size does it have?
 

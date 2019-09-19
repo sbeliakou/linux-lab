@@ -4,37 +4,45 @@
 
 ## Tasks
 
-1. Run `systemctl | grep running` or `systemctl --state running`. What services are currently active?
+### 1. Basic systemd commands
 
-2. Run `systemctl status httpd`. Is it active?
+- Run `systemctl | grep running` or `systemctl --state running`. What services are currently active?
 
-3. Start httpd service by running `systemctl start httpd`. Do you have an idea, how to stop it?
+- Run `systemctl status httpd`. Is it active?
 
-4. Stop httpd
+- Start httpd service by running `systemctl start httpd`. Do you have an idea, how to stop it?
 
-5. Run `systemctl enable httpd`, so service will be started every time after reboot. Is this service active now?
+- Stop httpd
 
-6. Add # before Listen 80 line in `/etc/httpd/conf/httpd.conf`, then restart httpd
+- Run `systemctl enable httpd`, so service will be started every time after reboot. Is this service active now?
 
-7. Check status of httpd service. Did something went wrong?
+### 2. Starting broken service
 
-8. Remove your changes from `httpd.conf`, then restart the service. What happened?
+- Add # before Listen 80 line in `/etc/httpd/conf/httpd.conf`, then restart httpd
 
-9. Open systemd unit file of the httpd service (it is located in `/usr/lib/systemd/system`)
+- Check status of httpd service. Did something went wrong?
 
-10. Change `After=network.target` to  `Before=network.target` in the [Unit] section
+- Remove your changes from `httpd.conf`, then restart the service. What happened?
 
-11. Check your changes by running `systemctl list-dependencies --before network.target`. Is httpd.service listed in there?
+### 3. Working with service files
 
-12. Restart the system
+- Open systemd unit file of the httpd service (it is located in `/usr/lib/systemd/system`)
 
-13. Check status of httpd service. What is the problem? How would you fix it?
+- Change `After=network.target` to  `Before=network.target` in the [Unit] section
 
-14. Remove your changes from `/usr/lib/systemd/system`, then restart the service.
+- Check your changes by running `systemctl list-dependencies --before network.target`. Is httpd.service listed in there?
 
-15. Check default page in browser at http://127.0.0.1:80
+- Restart the system
 
-16. Moreover, **systemctl** may be used to manage system: 
+- Check status of httpd service. What is the problem? How would you fix it?
+
+- Remove your changes from `/usr/lib/systemd/system`, then restart the service.
+
+- Check default page in browser at http://127.0.0.1:80
+
+### 4. Rebooting system
+
+- Moreover, **systemctl** may be used to manage system: 
   - explore **System Commands** section in `systemctl --help`
   - reboot your server using `systemctl`  
   (note: apart from that you can use `shutdown -r now`)

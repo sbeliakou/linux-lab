@@ -19,3 +19,10 @@
 7. Run `lvextend -l +100%FREE [lv-name]`
 
 8. Run `lvdisplay` again. What have changed?
+
+
+## Helpful Materials
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/logical_volumes
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/lvm_cli
+- https://codingbee.net/rhcsa/rhcsa-logical-volume-management-lvm-overview
+- https://www.thegeekdiary.com/redhat-centos-a-beginners-guide-to-lvm-logical-volume-manager/

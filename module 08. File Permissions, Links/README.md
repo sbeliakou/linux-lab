@@ -37,21 +37,21 @@ Create 7 files with names file1, ..., file7.
     | file6  | read, write, execute | read,  execute | read, write |
     | file7  | read | read, write | write, execute |
   - check all permissions were given correctly
-  
+
 - using letters
   - let's check **file1** permissions: `-rwxrwxrwx. 1 devops devops 0 Sep 11 10:41 file1`
   - let's delete user's read-permission for **file1** file: `chmod u-r file1`
   - let's delete group's write-permission for **file1** file: `chmod g-w file1`
   - let's delete other's execute-permission for **file1** file: `chmod o-x file1`
   - in result you shuld get the following result: `--wxr-xrw-. 1 devops devops 0 Sep 11 10:41 file1`
-  
+
   - let's check **file2** permissions: `----------. 1 devops devops 0 Sep 11 10:41 file2`
   - let's add read-permission for all: `chmod a+r file2`
   - let's add write-permission for group: `chmod g+w file2`
   - also you can add definite permission for **all**: `chmod a+x file2`
   - as result we've get: `-r-xrwxr-x. 1 devops devops 0 Sep 11 10:41 file2`
-  
-  - finally, instead decimal numbers we can write letter permissions for each entity separately:  
+
+  - finally, instead decimal numbers we can write letter permissions for each entity separately:
   ```bash
   [devops@localhost permissions_task]$ ls -l file2
   -r-xrwxr-x.  1  devops  devops  0  Sep 11 10:41  file2
@@ -64,7 +64,7 @@ Create 7 files with names file1, ..., file7.
   ```
 
 - using letter-way set the following permissions for the files:
-  
+
   | File name | User perm-s | Group perm-s | Others perm-s |
   | --------- | ----------- | ------------ | ------------- |
   | file1  | write, execute | write | read, write, execute |
@@ -74,7 +74,7 @@ Create 7 files with names file1, ..., file7.
   | file5  | write, execute | read, write | write, execute |
   | file6  | read, execute |  write, execute | read, |
   | file7  | read, write | read, write | read, write, execute |
-  
+
 
 ##### 2. how permissions work
 - execute `id` and look to user and group information for the current user
@@ -100,7 +100,7 @@ Create 7 files with names file1, ..., file7.
 - describe the difference between `su ...` and `su - ...` command
 - What permissions does user's home directory have?
 
- 
+
 ##### 3. Executable permissions
 - tasks with **user1**:
   - create file **~/user1_test** with content:
@@ -113,7 +113,7 @@ Create 7 files with names file1, ..., file7.
   - set executable permissions with `chmod u+x user1_test`. Can you run file now?
   - create new directory **user1_dir**
   - examine permissions of **~/user1_dir**. Describe what you see.
-  - set permissions to **user1_dir**, so there is no `x`. Can you access this directory? Can you rename it? 
+  - set permissions to **user1_dir**, so there is no `x`. Can you access this directory? Can you rename it?
 
 
 #### 4. Ownership
@@ -136,3 +136,13 @@ Create 7 files with names file1, ..., file7.
 ! what happend if delete source file?
 ! get origin path from link
 
+
+## Helpful Materials
+- https://www.youtube.com/watch?v=rp3CDGGnFL0&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=30
+- https://www.youtube.com/watch?v=_7Hfq6JS7u8&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=31
+- https://www.youtube.com/watch?v=K0KrP4tzLg8&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=34
+- https://www.youtube.com/watch?v=edjzPpc9oKY&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=53
+- https://www.youtube.com/watch?v=f4brdaS2bFs&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=54
+- https://www.youtube.com/watch?v=pAhG9H_hIHw&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=55
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-managing-locating.html
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-navigating-ownership.html

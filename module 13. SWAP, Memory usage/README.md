@@ -4,21 +4,21 @@
 
 ## Tasks
 
-1. Execute `swapon -s`. Does your system have configured swap? 
+1. Execute `swapon -s`. Does your system have configured swap?
 
 2. Run `free -t`. What amount of RAM do you have?
 
 3. Create swap file by executing `fallocate -l 1G /swapfile`
 
-4. Run `ls -lh /swapfile`. Does swapfile have correct size? 
+4. Run `ls -lh /swapfile`. Does swapfile have correct size?
 
 5. Grant 600 permissions to swapfile
 
 6. Execute `mkswap /swapfile && swapon /swapfile`
 
-7. Check `swapon -s` again. What have changed? 
+7. Check `swapon -s` again. What have changed?
 
-8. Run `free -t`. What have changed? 
+8. Run `free -t`. What have changed?
 
 9. Run `top` command. Who is the biggest RAM consumer?
 
@@ -30,4 +30,12 @@
 
 13. Find how many kernels do you have with `cat /proc/cpuinfo`. Does it differ from info, provided by VirtualBox?
 
-14. Move some big file to another place using `dd`. Check cpu usage with `uptime`. What have changed after 3 mins? After 15 mins?  
+14. Move some big file to another place using `dd`. Check cpu usage with `uptime`. What have changed after 3 mins? After 15 mins?
+
+
+## Helpful Materials
+- https://www.youtube.com/watch?v=D25qsn00mJQ&list=PLtGnc4I6s8duKXPypO75QPvD4ZsmXpYc2&index=23
+- https://www.youtube.com/watch?v=0kon1nHz3Hk&list=PLtGnc4I6s8duKXPypO75QPvD4ZsmXpYc2&index=1
+- https://www.youtube.com/watch?v=awtr9QEmXHE&list=PLtGnc4I6s8duKXPypO75QPvD4ZsmXpYc2&index=2
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/s1-sysinfo-memory-usage
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/s1-sysinfo-cpu

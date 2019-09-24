@@ -123,3 +123,4 @@ Create work directory **task6** and go into it.
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-manipulate-current.html
 - https://www.computernetworkingnotes.com/rhce-study-guide/tar-command-and-syntax-explained-with-examples.html
 - https://www.computernetworkingnotes.com/rhce-study-guide/how-to-use-the-vi-and-vim-editors-in-linux.html
+- https://vim-adventures.com/

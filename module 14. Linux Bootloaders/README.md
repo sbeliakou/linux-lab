@@ -22,3 +22,4 @@
 - https://www.youtube.com/watch?v=lxJI8Pmf1e4&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=17
 - https://www.youtube.com/watch?v=j5ppVpr-qSA&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=18
 - https://www.youtube.com/watch?v=RnviHf763Q4&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=19
+- https://katacoda.com/cybershaolin/courses/intro-to-linux/linux-os

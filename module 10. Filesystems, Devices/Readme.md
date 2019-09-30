@@ -79,6 +79,7 @@
 
 
 ## Helpful Materials
+- https://www.youtube.com/watch?v=_h30HBYxtws
 - https://www.youtube.com/watch?v=KfiFsUCntGM&list=PLD_mb6U5Xp95cX_CDO3Cg-p8370lPwRR2&index=43
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-disk-storage
 - https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/chap-using_the_mount_command
